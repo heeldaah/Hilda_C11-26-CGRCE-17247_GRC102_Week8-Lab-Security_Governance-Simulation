@@ -52,15 +52,26 @@ The lab is intended to run in an isolated Linux environment using Docker Compose
 
 The baseline environment supports examination of governance concerns such as broad internal reachability, example credentials, limited monitoring evidence or missing remediation ownership. The actual state of the containers is established from the captured output of `sudo docker-compose ps`.
 
-**Figure 1 — Docker Services and State**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-<img width="602" height="221" alt="image" src="https://github.com/user-attachments/assets/0095f3a3-a208-48f1-9485-48a912453457" />
-*01-docker-compose-ps.png
+**FIGURE 1 | DOCKER SERVICES AND STATE**
 
-**Figure 2 — Application Health Check**
+<img width="602" height="221" alt="image" src="https://github.com/user-attachments/assets/b9fd0a55-d8a5-4e18-8264-f32be7a42cc7" />
 
-<img width="601" height="168" alt="image" src="https://github.com/user-attachments/assets/9fb3f39a-9f7b-4748-8a0f-a37207c74570" />
-*02-application-health.png
+<p><em>01-docker-compose-ps.png</em></p>
+
+</div>
+
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 2 | APPLICATION HEALTH CHECK**
+
+<img width="601" height="168" alt="image" src="https://github.com/user-attachments/assets/4a5ec54d-4048-49d6-a1a4-47f288e88c21" />
+
+*02-application-health.png*
+
+</div>
 
 ### 1.2 Vulnerability Scan Report
 
