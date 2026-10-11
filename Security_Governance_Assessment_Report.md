@@ -1,4 +1,4 @@
-# GRC102 · Information Security Governance
+<img width="602" height="120" alt="image" src="https://github.com/user-attachments/assets/48ed0cfb-05f2-4581-90c2-8bc791205905" /># GRC102 · Information Security Governance
 ## Security Governance Simulation — Week 5 | Practical Lab 8 | Equifax-Inspired Scenario
 
 **Monitoring, Control Verification, Metrics and Executive Reporting**
@@ -83,17 +83,29 @@ The project contains a vulnerability-scanning script and timestamped JSON report
 | Network exposure | Published ports and service-to-service access should follow the intended architecture and least privilege. | The observed Docker output confirms that `web_server` is published on `0.0.0.0:8080` and `[::]:8080`. Review the effective Compose configuration and service/network output to determine whether this exposure is justified. |
 | Credentials and database access | Example credentials and environment variables are not a production secrets-management design. | Inspect the Compose configuration and relevant environment settings. Document the actual configuration without exposing passwords. Identify production requirements for secrets management, credential rotation and database access control. |
 
-**Figure 3 — Vulnerability Scan and Finding Summary**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-![Baseline scan](screenshots/03-baseline-scan.png)
+**FIGURE 3 | VULNERABILITY SCAN AND FINDING SUMMARY**
+
+<img width="602" height="120" alt="image" src="https://github.com/user-attachments/assets/1bd88fc2-1dda-4b73-a915-d0979f83042a" />
+
+*03-baseline-scan.png*
+
+</div>
 
 ### 1.3 Governance Tracker Dashboard
 
 The governance tracker organises risks, controls, incidents, metrics and follow-up actions. Its value depends on linking each issue to an accountable owner, due date, status, evidence and escalation path.
 
-**Figure 4 — Governance Tracker Dashboard**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-![Governance tracker dashboard](screenshots/04-governance-tracker.png)
+**FIGURE 4 | GOVERNANCE TRACKER DASHBOARD**
+
+<img width="461" height="472" alt="image" src="https://github.com/user-attachments/assets/a6cae52f-64ed-4bfd-8fbf-bd15611691c4" />
+
+*04-governance-tracker.png*
+
+</div>
 
 ### 1.4 Explanation: How the Simulated Environment Reflects the Equifax Breach
 
@@ -109,9 +121,15 @@ The lab is a simplified, isolated simulation. It does not reproduce Equifax's ar
 
 The project includes `simulate_attack.py` and `attack_log.json`. The exercise is a synthetic suspicious-event simulation, not a real intrusion. It is intended to test whether an event can be recorded, analysed, assigned, escalated and used to identify weaknesses in the governance process.
 
-**Figure 5 — Synthetic Attack/Event Log**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-![Synthetic attack log](screenshots/05-synthetic-attack-log.png)
+**FIGURE 5 | SYNTHETIC ATTACK/EVENT LOG**
+
+<img width="592" height="303" alt="image" src="https://github.com/user-attachments/assets/aa114e53-fbcc-4e25-8a07-d5f9feed05db" />
+
+*05-synthetic-attack-log.png*
+
+</div>
 
 ### 2.2 Governance Failure Analysis
 
@@ -125,9 +143,15 @@ The analysis script and generated JSON report structure findings around technica
 | Database access and data governance | Broad access or weak secrets handling can increase the impact of application compromise. | Apply least privilege, protect and rotate secrets, restrict administration and audit access. |
 | Accountability and oversight | Findings can remain unresolved when ownership, exception approval and reporting are unclear. | Record decisions, escalate overdue material risks and report residual risk. |
 
-**Figure 6 — Governance Failure Analysis Output**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-![Governance failure analysis](screenshots/06-governance-failure-analysis.png)
+**FIGURE 6 | GOVERNANCE FAILURE ANALYSIS OUTPUT**
+
+<img width="602" height="116" alt="image" src="https://github.com/user-attachments/assets/6226f3e0-fdf9-4d82-b415-1af31f198497" />
+
+*06-governance-failure-analysis.png*
+
+</div>
 
 ### 2.3 Comparison with the Equifax Case Study
 
@@ -162,17 +186,37 @@ The project includes `implement_governance_controls.py`, `initialize_governance.
 | Monitoring and response | Defined sources, detections, alert ownership, triage SLA, escalation and closure evidence. | Evidence an event reaches the monitoring path, triggers an alert, is assigned and investigated. |
 | Governance oversight | Control owners, risk acceptance authority, escalation thresholds and executive reporting. | Documented responsibilities, decisions, overdue-risk reporting and review records. |
 
-**Figure 7 — Hardened Environment and Network Configuration (Control Implementation)**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-![Hardened environment](screenshots/07-hardened-environment.png)
+**FIGURE 7 | HARDENED ENVIRONMENT AND NETWORK CONFIGURATION (CONTROL IMPLEMENTATION)**
 
-**Figure 8 — Control Verification Results**
+<img width="328" height="276" alt="image" src="https://github.com/user-attachments/assets/519b6798-83df-4e47-b4ec-6e382511d98f" />
 
-![Control verification](screenshots/08-control-verification.png)
+*07-hardened-environment.png*
 
-**Figure 9 — Attack Simulation Results**
+</div>
 
-![Attack simulation](screenshots/09-attack-simulation.png)
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 8 | CONTROL VERIFICATION RESULTS**
+
+<img width="602" height="255" alt="image" src="https://github.com/user-attachments/assets/8c5ff852-974f-4448-b890-6cef4fad55d8" />
+
+*08-control-verification.png*
+
+</div>
+
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 9 | ATTACK SIMULATION RESULTS**
+
+<img width="602" height="124" alt="image" src="https://github.com/user-attachments/assets/5fd6762b-973f-4721-b9e6-4e3eeff3b19d" />
+
+*09-attack-simulation.png*
+
+</div>
 
 ### 3.2 Control Assurance and Residual Risk
 
@@ -212,37 +256,88 @@ The project includes `governance_metrics.py`, `governance_metrics_framework.md`,
 | Policy review currency | Are policies reviewed and approved on schedule? | Escalate overdue reviews and confirm owner approval. |
 | Risk-exception currency | Do accepted risks have valid approval and review dates? | Renew, remediate or revoke expired exceptions. |
 
-**Figure 10 — Security Governance Metrics**
 
-![Security governance metrics script](screenshots/10-security-governance-metrics-script.png)
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 10 | SECURITY GOVERNANCE METRICS**
+
+<img width="602" height="85" alt="image" src="https://github.com/user-attachments/assets/b6b45f1b-e66a-4722-9296-bc22ef78b2cd" />
+
+*10-security-governance-metrics-script.png*
+
+</div>
 
 ### 4.2 Executive Dashboard and Visualisations
 
 The HTML dashboard is intended to give leaders a concise view of security posture, material risks, compliance/control status, trends and recommended actions. Open `executive_dashboard.html` in a browser and confirm that its values and visualisations match the current metrics output. Red/amber/green indicators should draw attention to risk; **they must not hide missing data or make an untested control appear effective.**
 
-**Figure 11 — Executive Dashboard Overview**
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-![Executive dashboard](screenshots/11-executive-dashboard.png)
+**FIGURE 11 | EXECUTIVE DASHBOARD OVERVIEW**
 
-**Figure 12 — Metric Detail: Security Monitoring Coverage Trend**
+<img width="448" height="361" alt="image" src="https://github.com/user-attachments/assets/2464f300-a9af-42b5-b924-ad63d0bfa735" />
 
-![Security monitoring coverage trend](metrics_visualizations/12-security-monitoring-coverage-trend.png)
+<img width="463" height="370" alt="image" src="https://github.com/user-attachments/assets/1218a59c-53c2-4162-a0a4-73e4574ea5da" />
 
-**Figure 13 — Metric Detail: Patch Compliance Trend**
+*11-executive-dashboard.png*
 
-![Patch compliance trend](metrics_visualizations/13-patch-compliance-trend.png)
+</div>
 
-**Figure 14 — Metric Detail: Policy Compliance Trend**
 
-![Policy compliance trend](metrics_visualizations/14-policy-compliance-trend.png)
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
 
-**Figure 15 — Metric Detail: Security Incidents Trend**
+**FIGURE 12 | METRIC DETAIL — SECURITY MONITORING COVERAGE TREND**
 
-![Security incidents trend](metrics_visualizations/15-security-incidents-trend.png)
+<img width="451" height="314" alt="image" src="https://github.com/user-attachments/assets/0f4655d6-0c59-4fdb-860a-2e4d93d85d08" />
 
-**Figure 16 — Metric Detail: Vulnerability Remediation Time Trend**
+*12-security-monitoring-coverage-trend.png*
 
-![Vulnerability remediation time trend](metrics_visualizations/16-vulnerability-remediation-time-trend.png)
+</div>
+
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 13 | METRIC DETAIL — PATCH COMPLIANCE TREND**
+
+<img width="602" height="357" alt="image" src="https://github.com/user-attachments/assets/6f8c5c31-89b2-4ce8-92ec-b709eeaec8fd" />
+
+*13-patch-compliance-trend.png*
+
+</div>
+
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 14 | METRIC DETAIL — POLICY COMPLIANCE TREND**
+
+<img width="602" height="360" alt="image" src="https://github.com/user-attachments/assets/85c51500-0a0e-4e3f-ad21-e5d5634e3542" />
+
+*14-policy-compliance-trend.png*
+
+</div>
+
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 15 | METRIC DETAIL — SECURITY INCIDENTS TREND**
+
+<img width="580" height="329" alt="image" src="https://github.com/user-attachments/assets/a830b3c0-319a-4130-8850-f8e4e6d26e81" />
+
+*15-security-incidents-trend.png*
+
+</div>
+
+
+<div align="center" style="border: 2px solid #333; border-radius: 6px; padding: 15px; margin: 20px auto; max-width: 900px;">
+
+**FIGURE 16 | METRIC DETAIL — VULNERABILITY REMEDIATION TIME TREND**
+
+<img width="602" height="346" alt="image" src="https://github.com/user-attachments/assets/610af2f3-0956-4c55-bbb0-4bba68695bf3" />
+
+*16-vulnerability-remediation-time-trend.png*
+
+</div>
+
 
 ### 4.3 Board Report
 
