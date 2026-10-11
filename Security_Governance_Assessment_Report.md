@@ -1,4 +1,4 @@
-<img width="602" height="120" alt="image" src="https://github.com/user-attachments/assets/48ed0cfb-05f2-4581-90c2-8bc791205905" /># GRC102 · Information Security Governance
+# GRC102 · Information Security Governance
 ## Security Governance Simulation — Week 5 | Practical Lab 8 | Equifax-Inspired Scenario
 
 **Monitoring, Control Verification, Metrics and Executive Reporting**
