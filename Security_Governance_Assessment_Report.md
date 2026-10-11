@@ -54,11 +54,13 @@ The baseline environment supports examination of governance concerns such as bro
 
 **Figure 1 — Docker Services and State**
 
-![Docker services and state](screenshots/01-docker-compose-ps.png)
+<img width="602" height="221" alt="image" src="https://github.com/user-attachments/assets/0095f3a3-a208-48f1-9485-48a912453457" />
+*01-docker-compose-ps.png
 
 **Figure 2 — Application Health Check**
 
-![Application health check](screenshots/02-application-health.png)
+<img width="601" height="168" alt="image" src="https://github.com/user-attachments/assets/9fb3f39a-9f7b-4748-8a0f-a37207c74570" />
+*02-application-health.png
 
 ### 1.2 Vulnerability Scan Report
 
